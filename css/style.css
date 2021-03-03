@@ -1,0 +1,28 @@
+:root {
+    --white: #ffffff;
+    --gray:  #3e4444;
+    --lightgreen: #82b74b;
+    --darkgreen: #405d27;
+    --brown: #c1946a;
+
+}
+
+.gray{
+    background: var(--gray) !important;
+    color: var(--white) !important;
+}
+
+.btn-color{
+    background: var(--brown);
+    color: var(--white);
+}
+
+.btn-color:hover{
+    color: var(--gray);
+    opacity: .8 !important;
+}
+
+.carousel-item img {
+    max-height: 500px; /* input your desired height here */
+    object-fit: cover;
+}
