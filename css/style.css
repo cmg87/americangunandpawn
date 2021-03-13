@@ -4,6 +4,7 @@
     --lightgreen: #82b74b;
     --darkgreen: #405d27;
     --brown: #c1946a;
+    --darkbrown: #63554c;
 
 }
 
@@ -23,6 +24,27 @@
 }
 
 .carousel-item img {
-    max-height: 500px; /* input your desired height here */
+    /*max-height: 800px;*/
+    max-height: 95vh;
     object-fit: cover;
 }
+
+.card img{
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-color{
+    background: var(--brown);
+    color: var(--white);
+}
+
+body{
+    background: var(--gray);
+}
+
+.footer{
+    background: var(--white);
+    color: var(--darkgreen);
+}
+
