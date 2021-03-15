@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>American Pawn & Gun</title>
     <link rel="stylesheet" href="./css/bootstrap-grid.css">
     <link rel="stylesheet" href="./css/bootstrap-reboot.css">
@@ -15,9 +16,17 @@
 </head>
 <body>
 
+<!--top advert-->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col h2 text-center brown-font">1-844-PAWN-GUN</div>
+        <a href="https://play.google.com/store/apps/details?id=com.bravorevolution.instapawn&hl=en_US&gl=US">mobile app</a>
+    </div>
+</div>
+
 
 <!--    navbar-->
-<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light gray">
+<nav id="navbar_top" class="navbar navbar-expand-lg navbar-light bg-light gray">
     <a class="navbar-brand brown-font" href="./index.html">American P&G</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -121,7 +130,7 @@
 <!--                <div class="card card-color" style="width: 18rem;">-->
 <!--                    <img class="card-img-top" src="./images/bullets.jpg" alt="ammpo">-->
 <!--                    <div class="card-body">-->
-<!--                        <p class="card-text">We have tons of bullets babyee!!!</p>-->
+<!--                        <p class="card-text"></p>-->
 <!--                    </div>-->
 <!--                </div>-->
 <!--            </div>-->
@@ -130,7 +139,7 @@
 <!--                <div class="card card-color" style="width: 18rem;">-->
 <!--                    <img class="card-img-top" src="./images/cleangun.jpg" alt="ammpo">-->
 <!--                    <div class="card-body">-->
-<!--                        <p class="card-text">We offer ultrasonic gun and cleaning for pistols and bolt carriers starting at $10 & up</p>-->
+<!--                        <p class="card-text"></p>-->
 <!--                    </div>-->
 <!--                </div>-->
 <!--            </div>-->
@@ -147,7 +156,7 @@
 
         WE WON'T CARRY ANYTHING WE WOULDN'T SHOOT. <br>
 
-        WE OFFER ULTRASONIC GUN CLEANING FOR PISTOLS AND BOLT CARRIERS FOR $10.00-20.00
+        WE OFFER ULTRASONIC GUN CLEANING FOR PISTOLS AND BOLT CARRIERS FOR $10.00-20.00 <br>
         FFL TRANSFERS ARE ONLY $25.00 <br>
 
         WE CAN ORDER ALMOST ANY FIREARM (EXCLUDING MACHINE GUNS, AND NFA ITEMS) <br>
@@ -164,8 +173,8 @@
 <div class="row pt-5 pb-5" id="contact">
     <div class="col-md-12 col-lg-6 text-center">
         <iframe
-                width="500"
-                height="500"
+                width="100%"
+                height="100%"
                 style="border:0"
                 loading="lazy"
 
@@ -175,7 +184,7 @@
         </iframe>
     </div>
     <div class="col-md-12 col-lg-6 pr-5">
-        <div class="h3 pb-2">Send us an inquiry</div>
+        <div id="inquiry" class="h3 pb-2">Send us an inquiry</div>
         <form name="contact" method="POST" data-netlify="true">
             <div class="form-group">
                 <label for="exampleFormControlInput1">Name</label>
@@ -234,5 +243,19 @@
         </div>
 
     </div>
+
+<script>
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 40) {
+            $('#navbar_top').addClass("fixed-top");
+            // add padding top to show content behind navbar
+            $('body').css('padding-top', $('.navbar').outerHeight() + 'px');
+        }else{
+            $('#navbar_top').removeClass("fixed-top");
+            // remove padding top from body
+            $('body').css('padding-top', '0');
+        }
+    });
+</script>
 </body>
 </html>
