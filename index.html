@@ -16,20 +16,20 @@
 <body>
 <!--    navbar-->
 <nav class="navbar navbar-expand-lg navbar-light bg-light gray">
-    <a class="navbar-brand" href="./index.html">American P&G</a>
+    <a class="navbar-brand gray" href="./index.html">American P&G</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
             <li class="nav-item active">
-                <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link link" href="./index.html">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Our Shop</a>
+                <a class="nav-link link" href="#">Our Shop</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="./contact.html">Contact</a>
+                <a class="nav-link link" href="#contact">Contact</a>
             </li>
 
         </ul>
@@ -54,7 +54,7 @@
         <div class="carousel-item">
             <img class="d-block w-100" src="./images/freerings.jpg" alt="Second slide">
             <div class="carousel-caption d-none d-md-block">
-                <h2 style="color: black">Browse our newest selection of jewelry</h2>
+                <h2>Browse our newest selection of jewelry</h2>
                 <button type="button" class="btn btn-color">Buy Jewelry</button>
             </div>
         </div>
@@ -78,69 +78,102 @@
 
 
 <!--container-->
-    <div class="container-fluid bg-color">
+    <div class="container-fluid">
 
-        <div class="row">
-            <div class="col-sm text-center">We hope you can find everything you need. <br>
+<!--        top  about section-->
 
-                AMERICAN PAWN & GUN is focused on providing high-quality service and customer satisfaction - we will do everything we can to meet your expectations.
-                <br>
-                We specialize in
-                <br>
-                HIGH END JEWELRY
-                <br>
-                ELECTRONICS
-                <br>
-                FIREARMS
-                <br>
-                TOOLS
-                <br>
-                ANYTHING OF VALUE
-                <br>
-                ALSO, if you are a war veteran or active duty military, you are entitled to our interest free loan program. Inquire within.
-                <br>
-                We're sure you'll be happy working with us. Look around our website and if you have any comments or questions, please feel free to contact us.</div>
-            <div class="col-sm"><img src="./images/ar15.jpg" alt=""></div>
+        <div class="row mt-5">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-4 text-center pt-5">
+                    <h2>BUY, SELL, TRADE!</h2>
+                    <p>We hope you can find everything you need.
+
+                        AMERICAN PAWN & GUN is focused on providing high-quality service and customer satisfaction - we will do everything we can to meet your expectations.
+
+                        We specialize in
+
+                        HIGH END JEWELRY
+
+                        ELECTRONICS
+
+                        FIREARMS
+
+                        TOOLS
+
+                        ANYTHING OF VALUE
+
+                        ALSO, if you are a war veteran or active duty military, you are entitled to our interest free loan program. Inquire within.
+
+                        We're sure you'll be happy working with us. Look around our website and if you have any comments or questions, please feel free to contact us.</p>
+
+            </div>
+            <div class="col-sm-1"></div>
+            <div class="col-sm-5"><img src="./images/pawnshopfront.jpg" alt=""></div>
         </div>
+        </div>
+
+<!--card section-->
 
 <!--        card1-->
-        <div class="row mt-4">
-            <div class="col-sm">
-                <div class="card card-color" style="width: 18rem;">
-                    <img class="card-img-top" src="./images/bullets.jpg" alt="ammpo">
-                    <div class="card-body">
-                        <p class="card-text">We have tons of bullets babyee!!!</p>
-                    </div>
-                </div>
-            </div>
+<!--        <div class="row mt-4">-->
+<!--            <div class="col-sm">-->
+<!--                <div class="card card-color" style="width: 18rem;">-->
+<!--                    <img class="card-img-top" src="./images/bullets.jpg" alt="ammpo">-->
+<!--                    <div class="card-body">-->
+<!--                        <p class="card-text">We have tons of bullets babyee!!!</p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
 <!--            card2-->
-            <div class="col-sm">
-                <div class="card card-color" style="width: 18rem;">
-                    <img class="card-img-top" src="./images/cleangun.jpg" alt="ammpo">
-                    <div class="card-body">
-                        <p class="card-text">We offer ultrasonic gun and cleaning for pistols and bolt carriers starting at $10 & up</p>
-                    </div>
-                </div>
+<!--            <div class="col-sm">-->
+<!--                <div class="card card-color" style="width: 18rem;">-->
+<!--                    <img class="card-img-top" src="./images/cleangun.jpg" alt="ammpo">-->
+<!--                    <div class="card-body">-->
+<!--                        <p class="card-text">We offer ultrasonic gun and cleaning for pistols and bolt carriers starting at $10 & up</p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--services-->
+
+<div class="row">
+    <img src="./images/ar15.jpg" alt="ar15" style="width: 100vw; height: 500px; background-repeat: no-repeat; object-fit: cover;">
+</div>
+
+<!--        map section-->
+<div class="row" id="contact">
+    <div class="col-sm-12 col-md-6 text-center">
+        <iframe
+                width="500"
+                height="500"
+                style="border:0"
+                loading="lazy"
+
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCc9uBwPvqEnbM8lKUUpaWqGlLQGn1tTxA
+    &q=3306 W Hwy 74Monroe, NC 28110
+">
+        </iframe>
+    </div>
+    <div class="col-sm-12 col-md-6">
+        <form name="contact" method="POST" data-netlify="true">
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Name</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name" name="name">
             </div>
-<!--            card 3-->
-            <div class="col-sm">
-                <div class="card card-color" style="width: 18rem;">
-                    <img class="card-img-top" src="./images/bullets.jpg" alt="ammpo">
-                    <div class="card-body">
-                        <p class="card-text">We have tons of bullets babyee!!!</p>
-                    </div>
-                </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput2">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="name@example.com" name="email">
             </div>
-<!--            card 4-->
-            <div class="col-sm">
-                <div class="card card-color" style="width: 18rem;">
-                    <img class="card-img-top" src="./images/bullets.jpg" alt="ammpo">
-                    <div class="card-body">
-                        <p class="card-text">We have tons of bullets babyee!!!</p>
-                    </div>
-                </div>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Message</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="message"></textarea>
             </div>
-        </div>
+            <button type="submit" class="btn btn-color mb-2">Submit</button>
+        </form>
+    </div>
+</div>
+
 
 <!--        footer-->
 
@@ -160,9 +193,10 @@
 
             <div class="col-sm text-center">
                 <h4>Social</h4>
-                <i class="bi bi-facebook icon"></i>
-                <i class="bi bi-twitter"></i>
-                <i class="bi bi-instagram"></i>
+                <a href="https://www.facebook.com/americanpawnandgunmonroe/" style="color: white !important;"><i class="bi bi-facebook icon" style="font-size: 40px; padding: 2.5px;"></i></a>
+                <a href="https://www.instagram.com/americanpawngunllc/" style="color: white !important;"><i class="bi bi-instagram" style="font-size: 40px; padding: 2.5px;"></i></a>
+<!--                <i class="bi bi-twitter"></i>-->
+
             </div>
 
             <div class="col-sm text-center">

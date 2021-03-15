@@ -8,9 +8,21 @@
 
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .gray{
     background: var(--gray) !important;
     color: var(--white) !important;
+}
+
+.link{
+    color: var(--white) !important;
+}
+
+.link:hover{
+    opacity: .8;
 }
 
 .btn-color{
@@ -39,12 +51,12 @@
     color: var(--white);
 }
 
-body{
-    background: var(--gray);
-}
+/*body{*/
+/*    background: var(--gray);*/
+/*}*/
 
 .footer{
-    background: var(--white);
-    color: var(--darkgreen);
+    background: var(--gray);
+    color: var(--white);
 }
 
