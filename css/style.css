@@ -12,13 +12,21 @@ html {
     scroll-behavior: smooth;
 }
 
+.brown-font{
+    color: var(--brown) !important;
+}
+
+.gray-bg{
+    background: var(--gray);
+}
+
 .gray{
     background: var(--gray) !important;
     color: var(--white) !important;
 }
 
 .link{
-    color: var(--white) !important;
+    color: var(--brown) !important;
 }
 
 .link:hover{
@@ -60,3 +68,16 @@ html {
     color: var(--white);
 }
 
+
+.text-box{
+    font-size: 16px;
+    background-color: var(--brown);
+    color: white;
+    position: absolute;
+    bottom: 0px;
+    right: 50px;
+    padding: 40px;
+    border-radius: 3px;
+    width: 50%;
+    box-sizing: border-box;
+}
