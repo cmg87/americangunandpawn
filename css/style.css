@@ -15,6 +15,14 @@ html {
     scroll-behavior: smooth;
 }
 
+body{
+    font-family: 'Barlow Semi Condensed', sans-serif !important;
+}
+
+.card-font{
+    color: var(--blue) imp !important;
+}
+
 .top-header{
     color: var(--blue) !important;
 }
@@ -24,12 +32,16 @@ html {
     color: var(--brown) !important;
 }
 
+.logo-font{
+    color: var(--brown) !important;
+}
+
 .gray-bg{
     background: var(--offwhite);
 }
 
 .gray{
-    background: var(--gray) !important;
+    background: var(--blue) !important;
     color: var(--white) !important;
 }
 
@@ -72,7 +84,7 @@ html {
 /*}*/
 
 .footer{
-    background: var(--gray);
+    background: var(--blue);
     color: var(--white);
 }
 
