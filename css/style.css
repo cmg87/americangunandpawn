@@ -5,6 +5,8 @@
     --darkgreen: #405d27;
     --brown: #c1946a;
     --darkbrown: #63554c;
+    --blue: #003349;
+    --offwhite: #e8e8e8;
 
 }
 
@@ -13,8 +15,8 @@ html {
     scroll-behavior: smooth;
 }
 
-.brown-font{
-    color: var(--brown) !important;
+.top-header{
+    color: var(--blue) !important;
 }
 
 .brown{
@@ -23,7 +25,7 @@ html {
 }
 
 .gray-bg{
-    background: var(--gray);
+    background: var(--offwhite);
 }
 
 .gray{
