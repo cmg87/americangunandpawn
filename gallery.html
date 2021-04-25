@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>American Pawn & Gun</title>
+  <link rel="stylesheet" href="./css/bootstrap-grid.css">
+  <link rel="stylesheet" href="./css/bootstrap-reboot.css">
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+          integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+          crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+          integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+          crossorigin="anonymous"></script>
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+</head>
+<body>
+
+<!--top advert-->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col h5 text-center top-header">#1 Rated Pawn & Gun Store in Union County!</div>
+  </div>
+  <div class="row">
+    <div class="col h2 text-center top-header">1-844-PAWN-GUN</div>
+
+  </div>
+</div>
+
+
+<!--navbar-->
+<nav id="navbar_top" class="navbar navbar-expand-lg navbar-light bg-light gray">
+  <a class="navbar-brand logo-font" href="./index.html">American P&G</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link link" href="./index.html">Home </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link link" href="http://www.buya.com/Store/AAMERICAN-PAWN-GUN/528">Our Shop</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link link" href="http://www.usedguns.com/Store/AMERICAN-PAWN-GUN/528">Firearms</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link link" href="./index.html#contact">Contact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link link" href="./gallery.html">Gallery<span class="sr-only">(current)</span></a>
+      </li>
+
+    </ul>
+  </div>
+</nav>
+<div class="container-fluid">
+  <!--gallery section-->
+  <div class="row">
+    <div class="d-flex flex-column">
+      <div class="p-2"><img src="./images/1shop.jpg" class="img-fluid" alt="shop"></div>
+      <div class="p-2"><img src="./images/2shop.jpg" class="img-fluid" alt="shop"></div>
+      <div class="p-2"><img src="./images/3shop.jpg" class="img-fluid" alt="shop"></div>
+      <div class="p-2"><img src="./images/4shop.jpg" class="img-fluid" alt="shop"></div>
+      <div class="p-2"><img src="./images/5shop.jpg" class="img-fluid" alt="shop"></div>
+      <div class="p-2"><img src="./images/6shop.jpg" class="img-fluid" alt="shop"></div>
+    </div>
+  </div>
+
+<!--  end gallery-->
+
+
+  <!--        footer-->
+
+  <div class="footer row mt-4 pt-4 pb-4 icon">
+    <div class="col-sm text-center">
+      <h4>CONTACT</h4>
+      1-844-PAWN-GUN <br>
+      (704) 774-1409<br>
+      Apg28110@gmail.com<br>
+      <br>
+      <h4>LOCATION</h4>
+      3306 HWY 74 W UNIT L <br>
+      MONROE, NC <br>
+      28110
+
+    </div>
+
+
+    <div class="col-sm text-center">
+      <h4>FOLLOW US</h4>
+      <a href="https://www.facebook.com/americanpawnandgunmonroe/" style="color: white !important;"><i
+              class="bi bi-facebook icon" style="font-size: 40px; padding: 2.5px;"></i></a>
+      <a href="https://www.instagram.com/americanpawngunllc/" style="color: white !important;"><i
+              class="bi bi-instagram" style="font-size: 40px; padding: 2.5px;"></i></a>
+
+
+    </div>
+
+    <div class="col-sm text-center">
+      <h4>HOURS</h4>
+      Sunday Closed <br>
+      Monday Closed <br>
+      Tuesday 9:30AM–5:30PM <br>
+      Wednesday 9:30AM–5:30PM <br>
+      Thursday 9:30AM–5:30PM <br>
+      Friday 9:30AM–5:30PM <br>
+      Saturday 9:30AM–4PM
+
+    </div>
+
+  </div>
+
+<!--  end footer-->
+
+</div>
+
+
+
+
+<script>
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 100) {
+      $('#navbar_top').addClass("fixed-top");
+      // add padding top to show content behind navbar
+      $('body').css('padding-top', $('.navbar').outerHeight() + 'px');
+    } else {
+      $('#navbar_top').removeClass("fixed-top");
+      // remove padding top from body
+      $('body').css('padding-top', '0');
+    }
+  });
+</script>
+</body>
+</html>
