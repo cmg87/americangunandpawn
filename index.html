@@ -329,6 +329,13 @@
   
 </div>
 
+<div id="ageVerificationPopup">
+    <div id="popupContent">
+      <h2>Age Verification</h2>
+      <p>You must be at least 18 years old to browse this site. By clicking "I Agree," you confirm that you meet this requirement.</p>
+      <button onclick="closePopup()">I Agree</button>
+    </div>
+  </div>
 
 <script>
     $(window).scroll(function () {
@@ -343,10 +350,38 @@
         }
     });
 
-    setTimeout(function(){
+//     setTimeout(function(){
+//         $('#myModal').modal('show');
+// }, 2000);
+
+// Check if the modal has already been shown
+if (!sessionStorage.getItem('modalShown')) {
+    setTimeout(function() {
+        // Show the modal
         $('#myModal').modal('show');
-}, 2000);
+        // Mark the modal as shown in sessionStorage
+        sessionStorage.setItem('modalShown', 'true');
+    }, 3000); // Delay of 3 seconds
+}
+
    
+
+function showPopup() {
+    if (!sessionStorage.getItem('popupShown')) {
+      document.getElementById('ageVerificationPopup').style.display = 'flex';
+    } else {
+      document.getElementById('ageVerificationPopup').style.display = 'none';
+    }
+  }
+
+  // Function to close the pop-up and mark it as shown
+  function closePopup() {
+    document.getElementById('ageVerificationPopup').style.display = 'none';
+    sessionStorage.setItem('popupShown', 'true');
+  }
+
+  // Show the pop-up when the page loads
+  window.onload = showPopup;
 </script>
 </body>
 </html>
