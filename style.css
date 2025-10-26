@@ -1,0 +1,109 @@
+:root {
+    /* Updated Color Palette */
+    --clr-main-black: #121212;
+    --clr-main-white: #FFFFFF;
+    /* --clr-accent-red: #A4201A; */
+    --clr-accent-red: #9B1B30;
+
+      /* Supporting Shades */
+  --clr-accent-hover: #B3233A;     /* Slightly brighter hover red */
+  --clr-border: #E5E5E5;           /* Light gray for dividers / outlines */
+  --clr-muted-text: #555555;       /* For secondary text or labels */
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--clr-main-white);
+    color: #1f2937; /* Tailwind gray-800 */
+}
+
+/* Custom Tailwind Colors */
+.bg-main-black { background-color: var(--clr-main-black); }
+.text-main-white { color: var(--clr-main-white); }
+
+.bg-accent-red { background-color: var(--clr-accent-red); }
+.text-accent-red { color: var(--clr-accent-red); }
+.border-accent-red { border-color: var(--clr-accent-red); }
+.hover\:bg-accent-red-dark:hover { background-color: #8a1c15; }
+.text-muted-text { color: var(--clr-muted-text); }
+
+/* Custom Scrollbar (optional but nice) */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #e5e7eb; /* gray-200 */
+}
+::-webkit-scrollbar-thumb {
+    background: var(--clr-accent-red);
+    border-radius: 4px;
+}
+
+/* Modal Styles */
+#newsletter-modal {
+    z-index: 9999;
+}
+
+#newsletter-modal .response {
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+#newsletter-modal #mce-error-response {
+    background-color: #fee;
+    color: #c33;
+    border: 1px solid #c33;
+}
+
+#newsletter-modal #mce-success-response {
+    background-color: #efe;
+    color: #383;
+    border: 1px solid #383;
+}
+
+/* Split CTA Button Styles */
+.split-cta-container {
+    position: relative;
+}
+
+.split-cta-single {
+    white-space: nowrap;
+}
+
+.split-cta-dual {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.split-cta-left,
+.split-cta-right {
+    white-space: nowrap;
+    min-width: 150px;
+}
+
+/* Respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    .split-cta-dual {
+        animation: none;
+    }
+}
+
+/* Hero Section Background */
+.hero-section {
+    background-color: var(--clr-main-black);
+}
+
+.hero-section img {
+    object-position: center;
+}
